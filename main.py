@@ -31,7 +31,7 @@ with urllib.request.urlopen('https://json.medrating.org/todos') as file:
     todos = json.load(file)
 with urllib.request.urlopen('https://json.medrating.org/users') as file:
     users = json.load(file)
-path = r'C:\programes\high level\test_1\tasks'
+path = r'путь к вашей папке'
 os.makedirs(path, exist_ok=True)
 
 search_json('username', users)
