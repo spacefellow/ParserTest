@@ -3,6 +3,11 @@
 1) Cчитывание json с внешенго API
 2) Парсинг json
 3) Создание директории, содержащей файлы с распарсенными данными
+
+This code does the following:
+1) Reading json from external API
+2) json parsing
+3) Creation of a directory containing files with parsed data
 """
 
 import json
