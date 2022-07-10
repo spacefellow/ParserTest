@@ -76,8 +76,9 @@ def parse():
 
         with open(rf"{path}\{users[j]['username']}.txt", 'w', encoding='utf-8') as f:
             if users[j]["name"] != 0:
-                f.write('Отчёт для ' + f'{users[j]["username"]}.' + '\n' + 
-                        f'{users[j]["name"]}' + f' <{users[j]["email"]}> ' + str(now)[:-3] + '\n' +
+                f.write('Отчёт для ' + f"{users[j]['username']}." +
+                        '\n' + f"{users[j]['name']}" +
+                        f" <{users[j]['email']}> " + str(now)[:-3] + '\n' +
                         f"Всего задач: {all_tasks}" + '\n' + '\n' +
                         f"Завершенные задачи ({sum_finished_tasks}):" + '\n' +
                         f"{finished_tasks}" + '\n' + '\n' +
