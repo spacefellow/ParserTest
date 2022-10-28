@@ -13,7 +13,7 @@ path = r'path'
 os.makedirs(path, exist_ok=True)
 
 
-def search_json(key, obj):  # key - ключ в словарях, являющихся obj[i] - объектами в списке, obj - список
+def search_json(key, obj):  # key - ключ в словарях, являющихся obj[i] - объектами в списке obj
     run = 0  # run перебирает словари в списке
     while run < len(obj):
         if key not in obj[run]:
